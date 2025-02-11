@@ -5,8 +5,8 @@ import type React from "react"
 const inter = Inter({ subsets: ["latin", "cyrillic"] })
 
 export const metadata = {
-  title: "Портфолио Front-end Разработчика",
-  description: "Мое портфолио на Next.js",
+  title: "Timofeev Ivan",
+  description: "TImofeev Ivan - Front-end разработчик (React / Next)",
 }
 
 export default function RootLayout({
