@@ -12,7 +12,7 @@ export function About() {
               alt="Фото разработчика"
               width={300}
               height={300}
-              className="rounded-full shadow-lg"
+              className="shadow-lg"
             />
           </div>
           <div className="w-full md:w-2/3">

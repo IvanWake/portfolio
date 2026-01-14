@@ -36,16 +36,17 @@ export function Header() {
     <header className="py-6 border-b border-gray-200 sticky top-0 bg-white z-10">
       <nav className="container mx-auto flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold">
-          Ivan Wake
+          Иван Тимофеев
         </Link>
         <ul className="flex space-x-4">
-          {["about", "stack", "projects", "social"].map((section) => (
-            <li key={section}>
+          {
+            [{name: "about", value: "Обо мне"}, {name: "stack", value: "Стек"}, {name: "projects", value: "Проекты"}, {name: "social", value: "Соц. сети"}].map((section) => (
+            <li key={section.name}>
               <button
-                onClick={() => scrollToSection(section)}
-                className={`hover:underline ${activeSection === section ? "font-bold" : ""}`}
+                onClick={() => scrollToSection(section.name)}
+                className={`hover:underline ${activeSection === section.name ? "font-bold" : ""}`}
               >
-                {section.charAt(0).toUpperCase() + section.slice(1)}
+                {section.value.charAt(0).toUpperCase() + section.value.slice(1)}
               </button>
             </li>
           ))}
